@@ -1,0 +1,127 @@
+.nav {
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    transition: all 0.5s;
+    display: inline-flex;
+}
+
+.nav_background {
+    background-color: #111;
+}
+
+.left__section {
+    display: inline-flex;
+}
+
+.tabbed_primary_navigation {
+    align-self: center;
+    list-style-type: none;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+.tabbed_primary_navigation li {
+    margin-left: 15px;
+    float: left;
+}
+
+.tabbed_primary_navigation li a {
+    cursor: pointer;
+    font-size: small;
+    display: block;
+}
+
+.tabbed_primary_navigation li a:hover {
+    color: grey;
+    transition: all 0.6s;
+}
+
+.netflix__logo {
+    object-fit: contain;
+    width: 8%;
+}
+
+.avatar__logo {
+    object-fit: contain;
+}
+
+.right__section {
+    display: flex;
+}
+
+.right__section__icons {
+    display: flex;
+}
+
+.right__section__icons button {
+    float: right;
+    padding: 0;
+    margin-right: 20px;
+    color: white;
+}
+
+.li__dropdown {
+    display: none;
+}
+
+.li__dropdown .link__dropdown {
+    display: flex;
+    align-items: center;
+}
+
+.link__dropdown::after {
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 5px 5px 0 5px;
+    border-color: #fff transparent transparent transparent;
+    margin-left: 5px;
+    border-bottom: 0;
+}
+
+.w {
+    display: none;
+}
+
+@media screen and (max-width: 920px) {
+    .li__dropdown {
+        position: relative;
+        display: block;
+    }
+
+    .tabbed_primary_navigation li.item {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 920px) {
+    .submenu {
+        position: absolute;
+        left: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        list-style-type: none;
+        width: 160px;
+        opacity: 0.8;
+    }
+
+    .submenu li {
+        margin: 0;
+    }
+
+    ul.__responsive {
+        display: none;
+    }
+
+    .submenu li a {
+        color: white;
+        text-decoration: none;
+        display: inline-block;
+        padding: 10px 25px;
+    }
+}
